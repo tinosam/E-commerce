@@ -1,14 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <style type="text/css">
+    #log{
+      margin-left: 50%;
+margin-top: 11%;
+width: 565px;
+border-radius: 23px;
+height: 368px;
+padding: 27px;
+background-color: white;
+    }
+   #user_email, #user_password, #user_password_confirmation {
+    width: 327px;
+    height: 30px;
+    }
+
+    
+   .logincat{
+    width: 242px;
+    position: absolute;
+    margin-left: 242px;
+   }
+   .loginc{
+   width: 51px;
+    height: 50px;
+   position: absolute;
+   margin-top: 10px;
+   margin-left: 291px;
+ }
+ .actions{
+ 
+width: 345px;
+margin-top: 44px;
+height: 42px;
+ }
+
+  </style>
+</head>
+<body style="background-image: url(http://3.bp.blogspot.com/-c8GDVtqhq5c/Vcms-bSZlCI/AAAAAAAAVDk/Ww67s3r2Yno/s1600/Image-chat-Fonds-d-%25C3%25A9cran-1.jpg)" >
+  
+
+
+<div id="log" >
+
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
+    <%= image_tag "email.png", :class => "loginc" %>
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
   </div>
 
   <div class="field">
+    <%= image_tag "password.png", :class => "loginc" %>
     <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off", class: "form-control"  %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
@@ -24,3 +74,7 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
+   
+</body>
+</html>
