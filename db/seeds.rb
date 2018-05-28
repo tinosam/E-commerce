@@ -16,7 +16,7 @@ cat5.save
 cat6 = Item.create(title: 'cat6', description: 'ils sont adorable', price: 1.5, image_url: 'cat6.jpg')
 cat6.save
 
-cat7 = Item.create(title: 'cat7', description: 'so strange', price: 1.7, image_url: 'cat7.jpg')
+cat7 = Item.create(title: 'cat7', description: 'so strange', price: 1.7, image_url: 'cat7.png')
 cat7.save
 
 cat8 = Item.create(title: 'cat8', description: 'I can play too', price: 1.4, image_url: 'cat8.jpg')
@@ -49,7 +49,7 @@ cat16.save
 cat17 = Item.create(title: 'cat17', description: 'Ils dorment comme un bébé', price: 2.1, image_url: 'cat17.jpg')
 cat17.save
 
-cat18 = Item.create(title: 'cat18', description: 'Il rêve.... trop chouuuu', price: 2.2, image_url: 'cat18.jpg')
+cat18 = Item.create(title: 'cat18', description: 'Il rêve.... trop chouuuu', price: 2.2, image_url: 'cat18.jpeg')
 cat18.save
 
 cat19 = Item.create(title: 'cat19', description: 'Ils jouent là.... super planque', price: 2.4, image_url: 'cat19.jpg')
