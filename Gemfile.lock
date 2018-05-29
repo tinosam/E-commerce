@@ -114,10 +114,14 @@ GEM
     nokogiri (1.8.2-x64-mingw32)
       mini_portile2 (~> 2.3.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
     orm_adapter (0.5.0)
 =======
     pg (1.0.0)
 >>>>>>> refs/remotes/origin/master
+=======
+    pg (1.0.0)
+>>>>>>> f8d1f8c55dc260f5d33415412f6ba3be1e01b03c
     pg (1.0.0-x64-mingw32)
     public_suffix (3.0.2)
     puma (3.11.4)
