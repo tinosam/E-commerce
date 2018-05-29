@@ -83,7 +83,6 @@ GEM
     duktape (2.0.1.0)
     erubi (1.7.1)
     execjs (2.7.0)
-    ffi (1.9.23)
     ffi (1.9.23-x64-mingw32)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -105,23 +104,12 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
-    msgpack (1.2.4)
     msgpack (1.2.4-x64-mingw32)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.8.2)
-      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.2-x64-mingw32)
       mini_portile2 (~> 2.3.0)
-<<<<<<< HEAD
-<<<<<<< HEAD
     orm_adapter (0.5.0)
-=======
-    pg (1.0.0)
->>>>>>> refs/remotes/origin/master
-=======
-    pg (1.0.0)
->>>>>>> f8d1f8c55dc260f5d33415412f6ba3be1e01b03c
     pg (1.0.0-x64-mingw32)
     public_suffix (3.0.2)
     puma (3.11.4)
@@ -207,7 +195,6 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-  ruby
   x64-mingw32
 
 DEPENDENCIES

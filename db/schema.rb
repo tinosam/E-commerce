@@ -10,21 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2018_05_29_121753) do
-=======
-ActiveRecord::Schema.define(version: 2018_05_29_090503) do
->>>>>>> refs/remotes/origin/master
-=======
-ActiveRecord::Schema.define(version: 2018_05_29_090503) do
->>>>>>> f8d1f8c55dc260f5d33415412f6ba3be1e01b03c
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+  create_table "items", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.decimal "price"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -40,20 +39,6 @@ ActiveRecord::Schema.define(version: 2018_05_29_090503) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-=======
-=======
->>>>>>> f8d1f8c55dc260f5d33415412f6ba3be1e01b03c
-  create_table "items", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.decimal "price"
-    t.string "image_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> f8d1f8c55dc260f5d33415412f6ba3be1e01b03c
   end
 
 end

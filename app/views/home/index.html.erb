@@ -7,19 +7,10 @@
 		<div class="top-menu">
 			<div class="container">
 				<div class="row">
-<<<<<<< HEAD
 					<div class="col-xs-2">
 						<div id="colorlib-logo">
 							<a href="index.html">Chat-On</a>
 						</div>
-=======
-					<div class="col-md-6">
-						<a href="shop.html" class="f-product-1" style="background-image: url(<%= Item.find_by(title: 'cat-10').image_url %>);">
-							<div class="desc">
-								<h2>Fahion <br>for <br>men</h2>
-							</div>
-						</a>
->>>>>>> refs/remotes/origin/master
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
@@ -45,40 +36,40 @@
 							</li>
 							<% if user_signed_in?%>
 
-								
-									<li class="has-dropdown">
-										<a href="shop.html">Utilisateurs</a>
-										<ul class="dropdown">
-											<li>
-												<a href="product-detail.html">Dashboard</a>
-											</li>
-											<li>
-												<a href="cart.html">Votre Profil</a>
-											</li>
 
-											<li>
-											<%= link_to "Déconnecter", destroy_user_session_path, method: :delete %>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="cart.html">
-											<i class="icon-shopping-cart"></i> Cart [0]</a>
-									</li>
-
-									
-
-									<li>
-										<%= current_user.email %>
-									</li>
-
-									<%else %>
-
+								<li class="has-dropdown">
+									<a href="shop.html">Utilisateurs</a>
+									<ul class="dropdown">
 										<li>
-											<a href="/home/login">Connexion</a>
+											<a href="product-detail.html">Dashboard</a>
+										</li>
+										<li>
+											<a href="cart.html">Votre Profil</a>
 										</li>
 
-										<% end %>
+										<li>
+											<%= link_to "Déconnecter", destroy_user_session_path, method: :delete %>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="cart.html">
+										<i class="icon-shopping-cart"></i> Cart [0]</a>
+								</li>
+
+
+
+								<li>
+									<%= current_user.email %>
+								</li>
+
+								<%else %>
+
+									<li>
+										<a href="/home/login">Connexion</a>
+									</li>
+
+									<% end %>
 						</ul>
 					</div>
 				</div>
@@ -93,16 +84,8 @@
 					<div class="overlay"></div>
 					<div class="container-fluid">
 						<div class="row">
-<<<<<<< HEAD
 							<div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
 								<div class="slider-text-inner">
-=======
-							<div class="col-md-6">
-								<a href="" class="f-product-2" style="background-image: url(<%= Item.find_by(title: 'item-12').image_url %>);">
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> f8d1f8c55dc260f5d33415412f6ba3be1e01b03c
 									<div class="desc">
 										<h3 class="head-1">Bienvenue</h3>
 										<h2 class="head-2">Dans</h2>
@@ -116,7 +99,6 @@
 									</div>
 								</div>
 							</div>
-<<<<<<< HEAD
 						</div>
 					</div>
 				</li>
@@ -126,13 +108,6 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
 								<div class="slider-text-inner">
-=======
-							<div class="col-md-6">
-								<a href="" class="f-product-2" style="background-image: url(<%= Item.find_by(title: 'cat_6').image_url %>);">
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> f8d1f8c55dc260f5d33415412f6ba3be1e01b03c
 									<div class="desc">
 										<h1 class="head-1">Chat-on</h1>
 										<h2 class="head-2">A prix réduix</h2>
@@ -146,7 +121,6 @@
 									</div>
 								</div>
 							</div>
-<<<<<<< HEAD
 						</div>
 					</div>
 				</li>
@@ -156,13 +130,6 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-push-3 col-sm-12 col-xs-12 slider-text">
 								<div class="slider-text-inner">
-=======
-							<div class="col-md-12">
-								<a href="" class="f-product-2" style="background-image: url(<%= Item.find_by(title: 'cat-12').image_url %>);">
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> f8d1f8c55dc260f5d33415412f6ba3be1e01b03c
 									<div class="desc">
 										<h1 class="head-1">Chat</h1>
 										<h2 class="head-2">Mignon</h2>
@@ -237,7 +204,6 @@
 					</h2>
 					<p>Nous amions tous les chats, asumons le .</p>
 				</div>
-<<<<<<< HEAD
 			</div>
 			<div class="row">
 				<div class="col-md-3 text-center">
@@ -269,25 +235,6 @@
 										</a>
 									</span>
 								</p>
-=======
-				<div class="row">
-					<div class="col-md-3 text-center">
-						<div class="product-entry">
-							<div class="product-img" style="background-image: url(<%= Item.find_by(title: 'cat_1').image_url %>);">
-								<p class="tag"><span class="new">New</span></p>
-								<div class="cart">
-									<p>
-										<span class="addtocart"><a href="cart.html"><i class="icon-shopping-cart"></i></a></span> 
-										<span><a href="product-detail.html"><i class="icon-eye"></i></a></span> 
-										<span><a href="#"><i class="icon-heart3"></i></a></span>
-										<span><a href="add-to-wishlist.html"><i class="icon-bar-chart"></i></a></span>
-									</p>
-								</div>
-							</div>
-							<div class="desc">
-								<h3><a href="shop.html">Floral Dress</a></h3>
-								<p class="price"><span>$300.00</span></p>
->>>>>>> refs/remotes/origin/master
 							</div>
 						</div>
 						<div class="desc">
@@ -299,7 +246,6 @@
 							</p>
 						</div>
 					</div>
-<<<<<<< HEAD
 				</div>
 				<div class="col-md-3 text-center">
 					<div class="product-entry">
@@ -330,24 +276,6 @@
 										</a>
 									</span>
 								</p>
-=======
-					<div class="col-md-3 text-center">
-						<div class="product-entry">
-							<div class="product-img" style="background-image: url(<%= Item.find_by(title: 'cat_2').image_url %>);">
-								<p class="tag"><span class="new">New</span></p>
-								<div class="cart">
-									<p>
-										<span class="addtocart"><a href="cart.html"><i class="icon-shopping-cart"></i></a></span> 
-										<span><a href="product-detail.html"><i class="icon-eye"></i></a></span> 
-										<span><a href="#"><i class="icon-heart3"></i></a></span>
-										<span><a href="add-to-wishlist.html"><i class="icon-bar-chart"></i></a></span>
-									</p>
-								</div>
-							</div>
-							<div class="desc">
-								<h3><a href="shop.html">Floral Dress</a></h3>
-								<p class="price"><span>$300.00</span></p>
->>>>>>> refs/remotes/origin/master
 							</div>
 						</div>
 						<div class="desc">
@@ -359,7 +287,6 @@
 							</p>
 						</div>
 					</div>
-<<<<<<< HEAD
 				</div>
 				<div class="col-md-3 text-center">
 					<div class="product-entry">
@@ -390,24 +317,6 @@
 										</a>
 									</span>
 								</p>
-=======
-					<div class="col-md-3 text-center">
-						<div class="product-entry">
-							<div class="product-img" style="background-image: url(<%= Item.find_by(title: 'cat_3').image_url %>);">
-								<p class="tag"><span class="new">New</span></p>
-								<div class="cart">
-									<p>
-										<span class="addtocart"><a href="cart.html"><i class="icon-shopping-cart"></i></a></span> 
-										<span><a href="product-detail.html"><i class="icon-eye"></i></a></span> 
-										<span><a href="#"><i class="icon-heart3"></i></a></span>
-										<span><a href="add-to-wishlist.html"><i class="icon-bar-chart"></i></a></span>
-									</p>
-								</div>
-							</div>
-							<div class="desc">
-								<h3><a href="shop.html">Floral Dress</a></h3>
-								<p class="price"><span>$300.00</span></p>
->>>>>>> refs/remotes/origin/master
 							</div>
 						</div>
 						<div class="desc">
@@ -419,7 +328,6 @@
 							</p>
 						</div>
 					</div>
-<<<<<<< HEAD
 				</div>
 				<div class="col-md-3 text-center">
 					<div class="product-entry">
@@ -450,24 +358,6 @@
 										</a>
 									</span>
 								</p>
-=======
-					<div class="col-md-3 text-center">
-						<div class="product-entry">
-							<div class="product-img" style="background-image: url(<%= Item.find_by(title: 'cat_4').image_url %>);">
-								<p class="tag"><span class="new">New</span></p>
-								<div class="cart">
-									<p>
-										<span class="addtocart"><a href="cart.html"><i class="icon-shopping-cart"></i></a></span> 
-										<span><a href="product-detail.html"><i class="icon-eye"></i></a></span> 
-										<span><a href="#"><i class="icon-heart3"></i></a></span>
-										<span><a href="add-to-wishlist.html"><i class="icon-bar-chart"></i></a></span>
-									</p>
-								</div>
-							</div>
-							<div class="desc">
-								<h3><a href="shop.html">Floral Dress</a></h3>
-								<p class="price"><span>$300.00</span></p>
->>>>>>> refs/remotes/origin/master
 							</div>
 						</div>
 						<div class="desc">
@@ -963,7 +853,8 @@
 				<div class="col-md-3 colorlib-widget">
 					<h4>About Store</h4>
 					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa
-						amet.</p>
+						amet.
+					</p>
 					<p>
 						<ul class="colorlib-social-icons">
 							<li>
