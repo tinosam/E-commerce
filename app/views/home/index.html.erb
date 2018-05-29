@@ -62,7 +62,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<a href="shop.html" class="f-product-1" style="background-image: url(images/product/cat_6.jpg);">
+						<a href="shop.html" class="f-product-1" style="background-image: url(<%= Item.find_by(title: 'cat-10').image_url %>);">
 							<div class="desc">
 								<h2>Fahion <br>for <br>men</h2>
 							</div>
@@ -71,21 +71,21 @@
 					<div class="col-md-6">
 						<div class="row">
 							<div class="col-md-6">
-								<a href="" class="f-product-2" style="background-image: url(images/product/cat_7.jpg);">
+								<a href="" class="f-product-2" style="background-image: url(<%= Item.find_by(title: 'item-12').image_url %>);">
 									<div class="desc">
 										<h2>New <br>Arrival <br>Dress</h2>
 									</div>
 								</a>
 							</div>
 							<div class="col-md-6">
-								<a href="" class="f-product-2" style="background-image: url(images/product/cat_8.jpg);">
+								<a href="" class="f-product-2" style="background-image: url(<%= Item.find_by(title: 'cat_6').image_url %>);">
 									<div class="desc">
 										<h2>Sale <br>20% <br>off</h2>
 									</div>
 								</a>
 							</div>
 							<div class="col-md-12">
-								<a href="" class="f-product-2" style="background-image: url(images/product/cat_9.jpg);">
+								<a href="" class="f-product-2" style="background-image: url(<%= Item.find_by(title: 'cat-12').image_url %>);">
 									<div class="desc">
 										<h2>Shoes <br>for <br>men</h2>
 									</div>
@@ -107,7 +107,7 @@
 				<div class="row">
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/product/cat_1.jpeg);">
+							<div class="product-img" style="background-image: url(<%= Item.find_by(title: 'cat_1').image_url %>);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -126,7 +126,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/product/cat_2.jpg);">
+							<div class="product-img" style="background-image: url(<%= Item.find_by(title: 'cat_2').image_url %>);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -145,7 +145,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/product/cat_3.jpg);">
+							<div class="product-img" style="background-image: url(<%= Item.find_by(title: 'cat_3').image_url %>);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -164,7 +164,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/product/cat_4.jpg);">
+							<div class="product-img" style="background-image: url(<%= Item.find_by(title: 'cat_4').image_url %>);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
