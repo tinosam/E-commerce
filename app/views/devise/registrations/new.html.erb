@@ -13,7 +13,7 @@
 
         <p>Enregistrer Vous</p>
         <p>Nous vous remercions déja de rejoindre notre communauté</p>
-        <a href="/">Retour</a>
+        <a> <%= link_to "Retour", home_index_path %></a>
         <br>
       </div>
       <div class="col-lg-6 right-box">
@@ -25,17 +25,34 @@
               <h1>Sign-in</h1>
               <form action="#">
 
+                
+
+            <div class="row form-group">
+
+              <%= f.label :fullname %>
+          
+              <%= f.text_field :fullname, autofocus: true, autocomplete: "Full Name", class: "form-control" %>
+
+            </div>
+
 
                 <div class="row form-group">
 
+<<<<<<< HEAD
                   <%= f.label :email %>
                     <br />
                     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+=======
+              <%= f.label :email %>
+            
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+>>>>>>> 7469059474b5cdb5d2cf4495c238aaf26ec3fb84
 
                 </div>
 
                 <div class="row form-group">
 
+<<<<<<< HEAD
                   <%= f.label :password %>
                     <% if @minimum_password_length %>
                       <em>(
@@ -43,14 +60,29 @@
                       <% end %>
                         <br />
                         <%= f.password_field :password, autocomplete: "off",class: "form-control" %>
+=======
+              <%= f.label :password %>
+              <% if @minimum_password_length %>
+              <em>(
+                <%= @minimum_password_length %> characters minimum)</em>
+                <% end %>
+                
+                <%= f.password_field :password, autocomplete: "off",class: "form-control" %>
+>>>>>>> 7469059474b5cdb5d2cf4495c238aaf26ec3fb84
 
                 </div>
 
                 <div class="row form-group">
 
+<<<<<<< HEAD
                   <%= f.label :password_confirmation %>
                     <br />
                     <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+=======
+                <%= f.label :password_confirmation %>
+                
+                <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+>>>>>>> 7469059474b5cdb5d2cf4495c238aaf26ec3fb84
 
                 </div>
                 <div class="login-button">
