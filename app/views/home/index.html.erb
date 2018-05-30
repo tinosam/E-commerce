@@ -31,10 +31,11 @@
 								<a href="blog.html">Produit</a>
 							</li>
 							<!-- <li><a href="about.html">About</a></li> -->
+							
+							<% if user_signed_in?%>
 							<li>
 								<a> <%= link_to "Votre Profile", edit_user_registration_path%></a>
 							</li>
-							<% if user_signed_in?%>
 
 
 								<li class="has-dropdown">
