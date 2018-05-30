@@ -30,7 +30,7 @@
 							</li>
 							<!-- <li><a href="about.html">About</a></li> -->
 							<li>
-								<a href="contact.html">Contact</a>
+								<a> <%= link_to "Votre Profile", edit_user_registration_path%></a>
 							</li>
 							<% if user_signed_in?%>
 								<li class="has-dropdown">
@@ -40,7 +40,7 @@
 											<a href="product-detail.html">Dashboard</a>
 										</li>
 										<li>
-											<a href="cart.html">Votre Profil</a>
+											<a ><%= link_to "Votre Profile", edit_user_registration_path%> </a>
 										</li>
 
 										<div class="dropdown-divider"></div>
@@ -56,13 +56,13 @@
 								</li>
 
 								<li>
-									<%= current_user.email %>
+									<%= current_user.fullname.capitalize!  %>
 								</li>
 
 								<%else %>
 
 									<li class="has-dropdown">
-									<a href="shop.html">Connexion</a>
+									<a >Connexion</a>
 									<ul class="dropdown">
 										<li>
 											<%= link_to "Sign In", new_user_session_path %>
@@ -891,7 +891,7 @@
 					<p>
 						<ul class="colorlib-footer-links">
 							<li>
-								<a href="#">Contact</a>
+								<a href="#">Contct</a>
 							</li>
 							<li>
 								<a href="#">Returns/Exchange</a>

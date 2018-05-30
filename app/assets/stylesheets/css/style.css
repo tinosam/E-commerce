@@ -1,0 +1,104 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.em{ width: 90%; }
+.name{
+  background-color: white;
+
+height: 363px;
+
+border-radius: 183px;
+
+width: 397px;
+
+text-align: center;
+
+font-size: 218px;
+font-family: URW Gothic L;
+box-shadow: -2px 10px 74px 22px #523121;
+}
+#editer{
+  margin-left: 397px;
+}
+.editer{
+  margin-left: 36px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card1 {
+width: 551px;
+margin: 0 auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+transition: 0.3s;
+height: 711px;
+}
+
+.card1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  
+}
+
+.card-title {
+  padding: 0 1em;
+  text-align: right;
+}
+.card-title h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+}
+.card-title h2 {
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+.card-info {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.card-social {
+  padding: 0 1em 1em 1em;
+}
+.card-social a {
+  margin: 0 1em;
+  color: #1f2021;
+  transition: 0.6s;
+}
+.card-social a:hover {
+  color: blue;
+}
